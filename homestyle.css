@@ -1,0 +1,138 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100%;
+	background-image:linear-gradient(plum,#702963);
+	color: white;
+	font-family: Bookman Old Style;
+}
+.dark-mode {
+  background-image: black;
+  color: white;
+}
+
+a, button{
+	font-family: Bookman Old Style;
+}
+
+.dropdown{
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color:purple;
+}
+.menu
+.theme,
+.accsetting{
+	position: relative;
+
+}
+.menu ul{
+	height: 150px;
+	width: 150px;
+    display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.theme ul{
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 24px;
+}
+.accsetting ul{
+	height: 60px;
+	width: 200px;
+    display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.menu ul,
+.theme ul,
+.accsetting ul{
+	position: absolute;
+	background:darkgray;
+	margin-top: 10px;
+	list-style: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+}
+
+.menu a,
+.theme a,
+.accsetting a{
+	color: white;
+	text-decoration: none;
+}
+
+.menu li,
+.theme li,
+.accsetting li,{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu li:hover,
+.theme li:hover,
+.accsetting li:hover{
+	background-color:midnightblue;
+}
+
+.dropdown button, .profile,
+.logout{
+text-decoration: none;
+color: white;
+background-color: transparent;
+border: none;
+font-size: 24px;
+cursor:pointer;
+}
+.dropdown button:hover,
+.profile:hover,
+.logout:hover{
+	color: midnightblue;
+}
+.menu button:focus +ul,
+.theme button:focus + ul,
+.accsetting button:focus + ul{
+	opacity: 1;
+	pointer-events: all;
+
+}
+
+ h1,
+ form{
+ 	min-height: 20vh;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ form input,form button{
+ padding: 0.5rem;
+ font-size: 2rem;
+ border: none;
+ background:white;
+ }
+ form button{
+ 	color:plum;
+ 	background: white;
+ 	cursor: pointer;
+ 	transition: all 0.3 ease;
+ }
+ form button:hover{
+ 	background:#702963;
+ 	color: white;
+ }
